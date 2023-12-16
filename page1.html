@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+  <title>Hello, world!</title>
+  <script src="script.js"></script> 
+</head>
+
+<body>
+  <main class="container">
+    <article>
+      <h1>TSN2101 Operating System: Assignment (10%)</h1>
+    </article>
+
+    <article>
+      <div class="grid">
+
+        <label for="Process Scheduling algorithms">Process Scheduling Algorithms</label>
+
+        <select id="Process Scheduling algorithms" onchange="createNewInput()" required>
+          <option value selected>Select a Process Scheduling algorithms</option>
+          <option>Round Robin with Quantum 3</option>
+          <option>Preemptive SJF</option>
+          <option>Non Preemptive SJF</option>
+          <option>Preemptive Priority</option>
+          <option>Non Preemptive Priority</option>
+
+        </select>
+
+        <label for="Arival Time">
+          Arival Time
+          <input type="text" id="Arival Time" name="Arival Time" placeholder="exp: 1 2 3 4 5 6 7" required>
+        </label>
+
+        <label for="Burst Time">
+          Burst Time
+          <input type="text" id="Burst Time" name="Burst Time" placeholder="exp: 1 2 3 4 5 6 7" required>
+        </label>
+
+        <div id="dynamicInputContainer">
+          <!-- Dynamic input field will be added here -->
+        </div>
+
+        <div role="button"> Lets Go !!</div>
+
+    </article>
+  </main>
+
+  
+</body>
+
+</html>
