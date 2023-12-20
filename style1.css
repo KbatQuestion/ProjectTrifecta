@@ -1,0 +1,48 @@
+
+
+
+
+.box {
+  width: 50%;
+  height: 200px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.box1 {
+  background-color: #3498db; /* Blue color */
+}
+
+.box2 {
+  background-color: #e74c3c; /* Red color */
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background-color: #3498db;
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+}
+
+.box-number {
+  color: #00ff37;
+  width: 20px;
+  margin-top: 5px;
+  ;
+}
+
+.box_endnumber{
+  color: #ff0000;
+  margin-top: 5px;
+  text-align: end;
+}
+
+#container2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}

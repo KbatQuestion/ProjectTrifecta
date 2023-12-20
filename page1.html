@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+  <link href="style1.css" rel="stylesheet">
   <title>Hello, world!</title>
   <script src="script.js"></script> 
 </head>
@@ -19,7 +20,6 @@
       <div class="grid">
 
         <label for="Process Scheduling algorithms">Process Scheduling Algorithms</label>
-
         <select id="Process Scheduling algorithms" onchange="createNewInput()" required>
           <option value selected>Select a Process Scheduling algorithms</option>
           <option>Round Robin with Quantum 3</option>
@@ -27,7 +27,6 @@
           <option>Non Preemptive SJF</option>
           <option>Preemptive Priority</option>
           <option>Non Preemptive Priority</option>
-
         </select>
 
         <label for="Arival Time">
@@ -44,12 +43,47 @@
           <!-- Dynamic input field will be added here -->
         </div>
 
-        <div role="button"> Lets Go !!</div>
+        <button onclick="processButton()">Let's Go !!</button>
 
+      </div>
     </article>
+
+    <article> 
+      <h1>Gantt Chart</h1>
+      <div id="container2">
+        <!-- Gantt Chart content -->
+      </div>
+    </article>
+
+    <!-- Adding a table with 5 columns -->
+    <article>
+      <h1>Table</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+            <th>Column 4</th>
+            <th>Column 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Add your table content here -->
+          <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+            <td>Data 4</td>
+            <td>Data 5</td>
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
+    </article>
+
   </main>
 
-  
 </body>
 
 </html>
